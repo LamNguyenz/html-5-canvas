@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dragging manipulation</title>
+    <style>
+      body {
+        background: #dddddd;
+      }
+      #wrapper {
+        position: relative;
+        .editCheckbox {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+        }
+      }
+
+      #canvas {
+        background: #ffffff;
+        border: thin inset #aaaaaa;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <label class="editCheckbox" for="editCheckbox">
+        Edit
+        <input id="editCheckbox" type="checkbox" />
+      </label>
+      <canvas id="canvas" width="600" height="420"> Canvas not supported </canvas>
+    </div>
+    <script src="example.js"></script>
+  </body>
+</html>
