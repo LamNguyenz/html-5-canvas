@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Canonical Canvas used in this book</title>
+    <title>Draw image</title>
     <style>
       body {
         background: #dddddd;
@@ -9,11 +9,16 @@
       #canvas {
         background: #ffffff;
         border: thin inset #aaaaaa;
+        margin-top: 20px;
+      }
+      #resetButton {
+        position: absolute;
       }
     </style>
   </head>
   <body>
-    <canvas id="canvas" width="500" height="400"> Canvas not supported </canvas>
+    <button id="resetButton">Reset</button>
+    <canvas id="canvas" width="600" height="400"> Canvas not supported </canvas>
     <script src="example.js"></script>
   </body>
 </html>

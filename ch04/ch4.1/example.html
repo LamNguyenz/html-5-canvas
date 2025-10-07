@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Draw image</title>
+    <style>
+      body {
+        background: #dddddd;
+      }
+      #canvas {
+        background: #ffffff;
+        border: thin inset #aaaaaa;
+      }
+      #scaleSlider {
+        vertical-align: 10px;
+        width: 100px;
+        margin-left: 90px;
+      }
+      #controls {
+        margin-left: 15px;
+        padding: 0;
+      }
+      #scaleOutput {
+        position: absolute;
+        width: 60px;
+        height: 30px;
+        margin-left: 10px;
+        vertical-align: center;
+        text-align: center;
+        color: blue;
+        font: 18px Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="controls">
+      <output id="scaleOutput">1.0</output>
+      <input
+        type="range"
+        id="scaleSlider"
+        min="1"
+        max="3.0"
+        step="0.01"
+        value="1.0" />
+    </div>
+    <canvas id="canvas" width="600" height="350"> Canvas not supported </canvas>
+    <script src="example.js"></script>
+  </body>
+</html>
