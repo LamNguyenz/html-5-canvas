@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lobbing a ball</title>
+    <style>
+      body {
+        background: #dddddd;
+      }
+      #canvas {
+        background: skyblue;
+        border: thin inset #aaaaaa;
+        cursor: pointer;
+      }
+      output {
+        color: blue;
+      }
+      .floatingControls {
+        background: rgba(0, 0, 0, 0.1);
+        border: thin solid skyblue;
+        box-shadow: rgba(100, 140, 230, 0.5) 2px 2px 6px;
+        padding: 15px;
+        font: 12px Arial;
+      }
+      #scoreboard {
+        background: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        left: 755px;
+        top: 20px;
+        color: blue;
+        font-size: 18px;
+        padding: 5px;
+      }
+      #controls {
+        position: absolute;
+        left: 285px;
+        top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="800" height="450"> Canvas not supported </canvas>
+    <div id="scoreboard" class="floatingControls"></div>
+    <div id="controls" class="floatingControls">
+      Launch velocity (m/s):
+      <output id="launchVelocityOutput"></output> m/s <br />
+
+      Launch angle (degrees):
+      <output id="launchAngleOutput"></output> degrees <br />
+    </div>
+
+    <script src="../../shared/js/requestNextAnimationFrame.js"></script>
+    <script src="../../shared/js/sprites.js"></script>
+    <script src="example.js"></script>
+  </body>
+</html>
